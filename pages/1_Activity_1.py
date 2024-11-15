@@ -30,6 +30,7 @@ def diffchange():
 
 option = st.selectbox(label="Select a difficulty level for the conversation:", 
                         options=("Level 1", "Level 2", "Level 3"),
+                        index=None,
                         placeholder="Choose a difficulty level",
                         disabled=st.session_state["diffchanged"],
                         on_change=diffchange)
