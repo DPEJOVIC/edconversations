@@ -10,6 +10,10 @@ if "level" not in st.session_state:
 if "diffchanged" not in st.session_state:
     st.session_state["diffchanged"] = False
 
+# Select GPT model
+if "openai_model" not in st.session_state:
+    st.session_state["openai_model"] = "gpt-4o-mini"
+
 # Initialise response counter
 if "response_counter" not in st.session_state:
     st.session_state.response_counter = 0

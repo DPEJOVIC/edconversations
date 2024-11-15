@@ -14,6 +14,10 @@ if not st.session_state["part_1_done"]:
 if "response_counter_2" not in st.session_state:
     st.session_state.response_counter_2 = 0
 
+# Select GPT model
+if "openai_model" not in st.session_state:
+    st.session_state["openai_model"] = "gpt-4o-mini"
+
 # Initialise chat history
 if "chat_history_2" not in st.session_state:
     st.session_state.chat_history_2 = []
